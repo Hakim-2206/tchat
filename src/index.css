@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-sm: 350px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1530px;
+}
+
+body {
+    font-family: Nunito, serif;
+    background: #ffffff;
+}
+
+input,select {
+    border: black 1px solid;
+    padding: 1em;
+}
+
+.nav-dark {
+    background: #141414;
+}
+
+.login, .home {
+    background-image: linear-gradient(#0000007e, #0000007e), url(/chatting.jpg);
+}
+
+input:focus:invalid {
+    border-color: red;
+}
+
